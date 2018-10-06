@@ -1,0 +1,33 @@
+# mkdir apk
+# mkdir workspace
+cd .
+
+echo clean:
+rm apk/*
+rm -r classfiles/*
+
+echo create project:
+rm -r workspace/*
+android create project --target 1 --name $1 --path workspace/$1 --activity $1 --package $2.$3.$4
+rm workspace/$1/bin/*
+
+echo copy manifest
+java -jar replace.jar HelloWorld $1 AndroidManifest.xml tmp
+java -jar replace.jar com.example.test $2.$3.$4 tmp workspace/$1/AndroidManifest.xml
+
+echo copy source
+java -jar replace.jar HelloWorld $1 javatext.java tmp
+java -jar replace.jar com.example.test $2.$3.$4 tmp workspace/$1/src/$2/$3/$4/$1.java 
+
+echo copy icon
+mkdir workspace/$1/res/drawable
+cp objedit_icons/* workspace/$1/res/drawable
+
+mkdir workspace/$1/res/raw
+cp objedit_install.zip workspace/$1/res/raw/install.zip
+ 
+echo build:
+ant debug -d -v -f workspace/$1/build.xml
+
+cp workspace/$1/bin/$1-debug.apk apk
+
