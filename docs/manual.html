@@ -1,0 +1,636 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>
+
+Objedit android マニュアル
+        
+        </title>
+        <meta name="title" content="
+Objedit android マニュアル
+        ">
+        <meta name="author" content="root">
+        <style type="text/css">
+<!-- #toc,
+.toc,
+.mw-warning {
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	font-size: 95%;
+}
+#toc h2,
+.toc h2 {
+	display: inline;
+	border: none;
+	padding: 0;
+	font-size: 100%;
+	font-weight: bold;
+}
+#toc #toctitle,
+.toc #toctitle,
+#toc .toctitle,
+.toc .toctitle {
+	text-align: center;
+}
+#toc ul,
+.toc ul {
+	list-style-type: none;
+	list-style-image: none;
+	margin-left: 0;
+	padding-left: 0;
+	text-align: left;
+}
+#toc ul ul,
+.toc ul ul {
+	margin: 0 0 0 2em;
+}
+#toc .toctoggle,
+.toc .toctoggle {
+	font-size: 94%;
+}p, h1, h2, h3, li {
+	color:#000000;
+	font-family:'TakaoEx明朝';
+	font-size:12pt;
+	text-align:left;
+	vertical-align:normal;
+}
+body{
+padding-top : 1in;
+padding-bottom : 1in;
+padding-left : 1in;
+padding-right : 1in;
+font-family:'TakaoEx明朝';
+font-variant:normal;
+text-indent:0in;
+widows:2;
+font-style:normal;
+font-weight:normal;
+text-decoration:none;
+color:#000000;
+text-align:left;
+font-size:12pt;
+} -->
+        </style>
+
+    </head>
+<body>        <div>
+            <p>
+<span style="font-weight:bold;font-size:22pt">・初めに</span>
+            </p>
+            <p>
+</p>
+            <p>
+Objedit-androidは絵を描く感覚でプログラムを作成する開発ツールです。
+            </p>
+            <p>
+数行〜数十行のソースコードを一つの部品として表示、
+            </p>
+            <p>
+部品の間のデータの流れを信号線として表示し、電子回路を設計する要領でプログラムを作成していきます
+            </p>
+            <p>
+詳しくは以下を参照してください。
+            </p>
+            <p>
+</p>
+            <p>
+<a href="objecteditor.html">ObjectEditorのマニュアル</a>
+            </p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+<span style="font-weight:bold">・TerminalIDE</span>
+            </p>
+            <p>
+本アプリを動作させるためにはこのアプリが必要になります。
+            </p>
+            <p>
+(むしろこれが本体だと言っても過言ではありません)
+            </p>
+            <p>
+</p>
+            <p>
+<a href="https://github.com/patilswapnilv/TerminalIDE">https://github.com/patilswapnilv/TerminalIDE</a>
+            </p>
+            <p class="" style="text-align:left;margin-bottom:0.0000in;margin-top:0.0000in;margin-right:0.0000in">
+</p>
+            <p class="" style="text-align:left;margin-bottom:0.0000in;margin-top:0.0000in;margin-right:0.0000in">
+Terminal IDEはコマンドラインで操作する非常に高機能な開発アプリで以下の機能が含まれています﻿。
+            </p>
+            <ul>
+                <li>
+<span>javac</span>
+                </li>
+                <li>
+<span>java</span>
+                </li>
+                <li>
+<span>dx</span>
+                </li>
+                <li>
+<span>proguard</span>
+                </li>
+                <li>
+<span>aapt</span>
+                </li>
+                <li>
+<span>apkbuilder</span>
+                </li>
+                <li>
+<span>signer</span>
+                </li>
+                <li>
+<span>ssh</span>
+                </li>
+                <li>
+<span>bash</span>
+                </li>
+                <li>
+<span>busybox</span>
+                </li>
+                <li>
+<span>vim</span>
+                </li>
+                <li>
+<span>nano</span>
+                </li>
+                <li>
+<span></span><span style="font-weight:bold;font-size:12pt;font-family:'TakaoEx明朝';text-transform:none;color:#000000">gcc</span>
+                </li>
+                <li>
+<span>git</span>
+                </li>
+
+            </ul>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+Terminal IDEの実行画面
+            </p>
+            <p>
+</p>
+            <p class="" style="margin-left:0pt;text-indent:0in">
+<img style="width:47.8mm; height:84.6mm" src="manual.html_files/image0.png" title="" alt="" align=""></p>
+            <p class="" style="margin-left:0pt;text-indent:0in">
+</p>
+            <p class="" style="margin-left:0pt;text-indent:0in">
+<img style="width:47.8mm; height:84.6mm" src="manual.html_files/image1.png" title="" alt="" align=""></p>
+            <p class="" style="margin-left:0pt;text-indent:0in">
+</p>
+            <p class="" style="margin-left:0pt;text-indent:0in">
+<img style="width:47.8mm; height:84.6mm" src="manual.html_files/image2.png" title="" alt="" align=""></p>
+            <p class="" style="margin-left:0pt;text-indent:0in">
+</p>
+            <p>
+</p>
+            <p>
+インストールの前に、上記のリンクをクリックしてインストールファイル(.apk)をダウンロードしてSDカードにコピーしておいて下さい。
+            </p>
+            <p class="" style="text-align:left">
+</p>
+            <p>
+</p>
+            <p>
+<span style="font-weight:bold">・インストール</span>
+            </p>
+            <p>
+インストールファイル"Objedit-debug.apk"をファイルマネージャー等のファイル管理アプリで開いて下さい。
+            </p>
+            <p>
+そうするとインストールが始まりさらに実行を進めていくと
+            </p>
+            <p>
+次のような画面が現れますので先ほどコピーしたTerminal IDEのインストールファイルをタッチして下さい、システムのインストールが始まります。
+            </p>
+            <p>
+</p>
+            <p>
+<img style="width:47.8mm; height:84.6mm" src="manual.html_files/image3.png" title="" alt="" align=""></p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+しばらくして次のような画面になれば、インストールは完了です。
+            </p>
+            <p>
+</p>
+            <p>
+<img style="width:47.8mm; height:84.6mm" src="manual.html_files/image4.png" title="" alt="" align=""></p>
+            <p>
+</p>
+            <p class="" style="text-align:left;margin-bottom:0.0000in;margin-top:0.0000in;margin-right:0.0000in">
+</p>
+            <p>
+</p>
+            <p>
+<span style="font-weight:bold">・プログラミング</span>
+            </p>
+            <p>
+プログラミングは基本的には画面上部のアイコンをタッチしてオブジェクト(図形)を張り付けて、オブジェクトを信号線で接続することで進めていきます。
+            </p>
+            <p>
+以下はそのアイコンの説明です
+            </p>
+            <p>
+</p>
+            <p>
+<img style="width:127.0mm; height:63.5mm" src="manual.html_files/image5.png" title="" alt="" align=""></p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+※それぞれの画面やアイコン、ボタンは指でスライドさせて動かすことができます。
+            </p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+<span style="font-weight:bold">・新規メニュー</span>
+            </p>
+            <p>
+</p>
+            <p>
+<img style="width:65.7mm; height:51.3mm" src="manual.html_files/image6.png" title="" alt="" align=""></p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+メニューで選択した言語を新規作成の状態で開きます。
+            </p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+<span style="font-weight:bold">・ファイルメニュー</span>
+            </p>
+            <p>
+</p>
+            <p>
+<img style="width:46.5mm; height:49.9mm" src="manual.html_files/image7.png" title="" alt="" align=""></p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+開く・・・・・・・・・・・プロジェクトを開きます
+            </p>
+            <p>
+</p>
+            <p>
+保存・・・・・・・・・・・プロジェクトを保存します
+            </p>
+            <p>
+（ファイル名はオブジェクト名と同一です）
+            </p>
+            <p>
+</p>
+            <p>
+ファイルにコピー・・・・・ここをタッチしてオブジェクトをタッチするとタッチ したオブジェクトが保存されます。
+            </p>
+            <p>
+</p>
+            <p>
+ファイルから貼り付け・・・ここをタッチ出てきたファイル選択画面でファイルを 選択して画面をタッチすると、タッチした画面にファ イルのオブジェクトが貼り付けられます。
+            </p>
+            <p>
+</p>
+            <p>
+ファイルを削除・・・・・・ここをタッチしてファイル選択画面でファイルを選択 すると選択されたファイルが削除されます。
+            </p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+<span style="font-weight:bold">・キーボード操作</span>
+            </p>
+            <p>
+キーボードの"MENU"または"VOLUME"ボタンを押すとメインメニューが表示されます。
+            </p>
+            <p class="" style="text-align:left">
+</p>
+            <p>
+<span style="font-weight:bold">・メインメニュー</span>
+            </p>
+            <p>
+</p>
+            <p>
+<img style="width:47.8mm; height:84.6mm" src="manual.html_files/image8.png" title="" alt="" align=""></p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+メインメニューは編集できるようになっています。
+            </p>
+            <p>
+</p>
+            <p>
+<span style="font-weight:bold">・メニュー編集画面</span>
+            </p>
+            <p>
+</p>
+            <p>
+<img style="width:84.6mm; height:47.8mm" src="manual.html_files/image9.png" title="" alt="" align=""></p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+編集後
+            </p>
+            <p>
+</p>
+            <p>
+<img style="width:88.0mm; height:50.4mm" src="manual.html_files/image10.png" title="" alt="" align=""></p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+うまく使えば面倒なコマンド入力をタッチ一回で済ませることができるので
+            </p>
+            <p>
+ぜひ活用して下さい。
+            </p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+<span style="font-weight:bold">・コンソール</span>
+            </p>
+            <p>
+</p>
+            <p>
+<img style="width:84.6mm; height:47.8mm" src="manual.html_files/image11.png" title="" alt="" align=""></p>
+            <p>
+</p>
+            <p>
+わざわざメニュー登録するまでもない場合は直接コマンド入力することもできます。
+            </p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+<img style="width:84.6mm; height:47.8mm" src="manual.html_files/image12.png" title="" alt="" align=""></p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+<span style="font-weight:bold">・GUIデザイナー</span>
+            </p>
+            <p>
+androidプログラミングでどうしても避けて通れないのがGUIデザインでしょう。
+            </p>
+            <p>
+スマートフォン等の狭い画面でもできるだけ簡単に操作できるようにしてみました。
+            </p>
+            <p>
+</p>
+            <p>
+<img style="width:73.0mm; height:41.0mm" src="manual.html_files/image13.png" title="" alt="" align=""></p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+画面の左半分が編集画面で右半分がプロパティ設定画面となります。
+            </p>
+            <p>
+</p>
+            <p>
+<span style="font-weight:bold">・編集画面</span>
+            </p>
+            <p>
+<img style="width:84.6mm; height:47.8mm" src="manual.html_files/image14.png" title="" alt="" align=""></p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+移動モードのときはタッチした位置に移動して
+            </p>
+            <p>
+サイズ変更モードのときは大きさが変わります。
+            </p>
+            <p>
+</p>
+            <p>
+<span style="color:#ff0000">※キーボードのカーソル移動キーを使うと</span>
+            </p>
+            <p>
+<span style="color:#ff0000">位置や大きさの微調整ができます。</span>
+            </p>
+            <p>
+<span style="color:#ff0000">カーソル移動キー以外のキーが押されると</span>
+            </p>
+            <p>
+<span style="color:#ff0000">モードが解除されて初期状態になります。</span>
+            </p>
+            <p>
+</p>
+            <p>
+<span style="font-weight:bold">・プロパティ設定画面</span>
+            </p>
+            <p>
+</p>
+            <p>
+<img style="width:84.6mm; height:47.8mm" src="manual.html_files/image15.png" title="" alt="" align=""></p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+<span style="color:#ff0000">※プロパティ値にはキーボード入力が必要なものがあります。</span>
+            </p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+編集が終わったら変換ボタンをタッチしてGUIのレイアウト情報をオブジェクトに
+            </p>
+            <p>
+変換します。
+            </p>
+            <p>
+</p>
+            <p>
+<img style="width:84.6mm; height:47.8mm" src="manual.html_files/image16.png" title="" alt="" align=""></p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+<img style="width:84.6mm; height:47.8mm" src="manual.html_files/image17.png" title="" alt="" align=""></p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+<span style="font-weight:bold">・コンパイル</span>
+            </p>
+            <p>
+プログラム作成が終了したらコンパイルします。
+            </p>
+            <p>
+</p>
+            <p>
+<img style="width:84.6mm; height:47.8mm" src="manual.html_files/image18.png" title="" alt="" align=""></p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+<span style="font-weight:bold">・実行</span>
+            </p>
+            <p>
+コンパイルでエラーが出なくなったら実行アイコンをタッチします。
+            </p>
+            <p>
+</p>
+            <p>
+<img style="width:84.6mm; height:47.8mm" src="manual.html_files/image19.png" title="" alt="" align=""></p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+<img style="width:84.6mm; height:47.8mm" src="manual.html_files/image20.png" title="" alt="" align=""></p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+<img style="width:84.6mm; height:47.8mm" src="manual.html_files/image21.png" title="" alt="" align=""></p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+<span style="font-weight:bold">・終わりに</span>
+            </p>
+            <p>
+ここまで読んでいただき、ありがとうございました
+            </p>
+            <p>
+貴方の快適なプログラミングライフを祈っております。
+            </p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+            <p>
+</p>
+</div>
+        <div>
+            <p>
+</p>
+</div>
+</body></html>

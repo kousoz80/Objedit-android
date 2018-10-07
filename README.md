@@ -1,6 +1,6 @@
 ## Objedit-android
   
-本プログラムはのandroid端末上で動作する[ObjectEditor](https://github.com/kousoz80/ObjectEditor) です。
+本プログラムはandroid端末上で動作する[ObjectEditor](https://github.com/kousoz80/ObjectEditor) です。
   
 ##### [起動画面]
   
@@ -14,11 +14,11 @@ androidアプリの他にC/C++言語、BASIC言語等のプログラム開発も
   
 ![GUIデザイナー](https://i.imgur.com/LlAU0M1.png)
   
-##### [変換後]
+##### [作成後]
   
-![変換後](https://i.imgur.com/y6Yxaa4.png)
+![作成後１](https://i.imgur.com/y6Yxaa4.png)
   
-![変換後2](https://i.imgur.com/uT9Qxht.png)
+![作成後２](https://i.imgur.com/uT9Qxht.png)
   
 ##### [コンパイル]
   
